@@ -1,14 +1,9 @@
-# ESP32 - Elechouse VR3
-ESP32 Elechouse Voice Recognition Module V3 Support
+# Oscilloscope Voice Control using an ESP32 and Elechouse VR3
 
-![ESP32 - Elechouse VR3](images/ESP32-VR3-modules.jpg)
+![Scope Voice Control](images/stop-closed-housing-crop.jpg)
 
-This is a edit of the Elechouse Arduino library for their Voice Recognition Module V3, to work on an ESP32. To install, start by installing the Elechouse library from here:
+This is a fairly simple ESP32 Arduino application which listens for voice words from an Elechouse voice recognition module V3, and issues matching comands to the network-attached oscilloscope. "Stop", "Run", etc. It builds on top of this [ESP32 - Elechouse VR3 library.](https://github.com/frankvanhooft/ESP32-ElechouseVR3)
 
-[Github - Elechouse VR3 Library](https://github.com/elechouse/VoiceRecognitionV3)
+The Arduino code is in this repo, as well as STL and Fusion 360 files for a matching housing.
 
-And then overwrite 4 of the Elechouse files with the 4 files provided in my repo [here.](https://github.com/frankvanhooft/ESP32-ElechouseVR3/tree/main/Arduino_Files) For full install & usage details, including how to wire the ESP32 to the Elechouse VR3, see this blog posting:
-
-[blog.frankvh.com - ESP32 Elechouse VR3 Support](https://blog.frankvh.com/2022/02/21/esp32-support-for-elechouse-voice-recognition-module-v3/)
-
-I've been using this for my [Oscilloscope Voice Control project](https://www.frankvh.com/oscilloscope-voice-control-using-esp32/) - it works quite well.
+ Full project details are found here: [Oscilloscope Voice Control project](https://www.frankvh.com/oscilloscope-voice-control-using-esp32/) - it works quite well.
