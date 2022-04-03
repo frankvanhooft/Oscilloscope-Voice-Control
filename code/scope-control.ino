@@ -20,6 +20,8 @@
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
+#define SCREEN_ROTATION 2 // OLED display rotation, index 0,1,2,3
+
 
 // These #defines used for positioning text on the OLED
 #define OLED_YPOS_TITLE  0
@@ -117,6 +119,7 @@ void start_oled(void)
   }
   
   delay(2000);            // OLED needs wakeup time, but so does everything else
+  display.setRotation(SCREEN_ROTATION);
   display.clearDisplay();
 
   display.setTextSize(1);
